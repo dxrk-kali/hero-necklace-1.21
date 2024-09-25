@@ -9,14 +9,19 @@ import net.minecraft.registry.Registries;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 
+// Where all Items are registered
 public class ModItems {
 
     // Register the Hero Necklace as a TrinketItem
     public static final Item HNECKLACE = registerItem("hero_necklace", new HeroNecklaceTrinketItem(new Item.Settings().maxCount(1)));
 
+    // Add new emerald type for crafting into the hero_necklace
+    public static final Item TRIMMEDEMERALD = registerItem("hero_trimmed_emerald", new Item(new Item.Settings()));
+
     // Method to register item to an item group tab
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(HNECKLACE);
+        entries.add(TRIMMEDEMERALD);
     }
 
     // Method to register the item in the Minecraft registry

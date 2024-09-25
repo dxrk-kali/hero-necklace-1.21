@@ -45,9 +45,10 @@ dependencies {
 
 	//trinkets import
 	modImplementation "maven.modrinth:trinkets:JagCscwi"
-//	modImplementation "dev.emi:trinkets:${trinkets_version}"
-//	modApi include("maven.modrinth:5aaWibi9:3.10.0")
-	//modImplementation "maven.modrinth:K01OU20C:6.1.0"
+	modImplementation "org.ladysnake.cardinal-components-api:cardinal-components-base:6.1.1"
+	modImplementation "org.ladysnake.cardinal-components-api:cardinal-components-entity:6.1.1"
+	include "org.ladysnake.cardinal-components-api:cardinal-components-base:6.1.1"
+	include "org.ladysnake.cardinal-components-api:cardinal-components-entity:6.1.1"
 
 }
 
