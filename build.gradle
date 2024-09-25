@@ -16,6 +16,18 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	maven {
+		name = "Modrinth"
+		url = "https://api.modrinth.com/maven"
+	}
+	maven {
+		name = "TerraformersMC"
+		url = "https://maven.terraformersmc.com/"
+	}
+	maven {
+		name = "Ladysnake Libs"
+		url = 'https://maven.ladysnake.org/releases'
+	}
 }
 
 fabricApi {
@@ -30,7 +42,13 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
+	//trinkets import
+	modImplementation "maven.modrinth:trinkets:JagCscwi"
+//	modImplementation "dev.emi:trinkets:${trinkets_version}"
+//	modApi include("maven.modrinth:5aaWibi9:3.10.0")
+	//modImplementation "maven.modrinth:K01OU20C:6.1.0"
+
 }
 
 processResources {
