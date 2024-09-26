@@ -1,4 +1,15 @@
 {
-  "item.heronecklace.hero_necklace": "Hero of the Village Necklace",
-  "item.heronecklace.hero_trimmed_emerald": "A powerful Emerald to craft into a Hero of the Village Necklace."
+  "item.heronecklace.hero_necklace": "Hero of the Village Necklace I",
+  "item.heronecklace.shero_necklace": "Hero of the Village Necklace III",
+  "item.heronecklace.ahero_necklace": "Hero of the Village Necklace V",
+  "item.heronecklace.phero_necklace": "Hero of the Village Necklace VII",
+  "item.heronecklace.rhero_necklace": "Hero of the Village Necklace X",
+
+  "item.heronecklace.hero_trimmed_emerald": "A powerful Emerald to craft into a Hero of the Village Necklace.",
+  "item.heronecklace.hero_trimmed_sapphire": "A powerful Sapphire to craft into a Hero of the Village Necklace.",
+  "item.heronecklace.hero_trimmed_amethyst": "A powerful Amethyst to craft into a Hero of the Village Necklace.",
+  "item.heronecklace.hero_trimmed_pinkspinel": "A powerful Pink Spinel to craft into a Hero of the Village Necklace.",
+  "item.heronecklace.hero_trimmed_ruby": "A powerful Ruby to craft into a Hero of the Village Necklace.",
+
+  "effect.heronecklace.sapphire_effect": "Effect given to player when Bad Omen II is used to enable the Sapphire Gem as a drop for 30 minutes.",
 }

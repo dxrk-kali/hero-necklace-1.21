@@ -3,13 +3,13 @@
 	"id": "heronecklace",
 	"version": "${version}",
 	"name": "Hero Necklace",
-	"description": "Hero of the Village Necklace made by arsic.",
+	"description": "Hero of the Village Necklace made by dxrk-kali. Adds a new Emerald and Necklace to the game. You can get the hero_trimmed_emerald as a drop from killing pillagers (10% drop chance) or Ravagers (40%) drop, a new recipe to craft the necklace should then be availible to craft a Hero Necklace. When worn the necklace gives you Hero of the Village permanently. It can be equipped in the necklace slot (thanks to Trinket API). This is the first working version and therefore could have many unknown bugs/mod incompatibilities but for the most part should not.",
 	"authors": [
-		"Me!"
+		"dxrk-kali"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/dxrk-kali/hero-necklace-1.21"
 	},
 	"license": "MIT",
 	"icon": "assets/heronecklace/icon.png",

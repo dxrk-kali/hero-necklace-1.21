@@ -23,5 +23,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         // Add the Hero Necklace to the chest/necklace trinket slot tag
         necklaceTagBuilder.add(ModItems.HNECKLACE);
+        necklaceTagBuilder.add(ModItems.SHNECKLACE);
+        necklaceTagBuilder.add(ModItems.AHNECKLACE);
+        necklaceTagBuilder.add(ModItems.PHNECKLACE);
+        necklaceTagBuilder.add(ModItems.RHECKLACE);
     }
 }
