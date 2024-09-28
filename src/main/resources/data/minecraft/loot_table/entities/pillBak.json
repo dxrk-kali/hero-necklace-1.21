@@ -1,0 +1,133 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "heronecklace:hero_trimmed_ruby",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacking_player",
+              "predicate": {
+                "effects": {
+                  "heronecklace:ruby_effect": {
+                    "amplifier": 0
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.09
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "heronecklace:hero_trimmed_pinkspinel",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacking_player",
+              "predicate": {
+                "effects": {
+                  "heronecklace:pinkspinel_effect": {
+                    "amplifier": 0
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.12
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "heronecklace:hero_trimmed_amethyst",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacking_player",
+              "predicate": {
+                "effects": {
+                  "heronecklace:amethyst_effect": {
+                    "amplifier": 0
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.15
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "heronecklace:hero_trimmed_sapphire",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacking_player",
+              "predicate": {
+                "effects": {
+                  "heronecklace:sapphire_effect": {
+                    "amplifier": 0
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.20
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ominous_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_ominous_bottle_amplifier",
+              "amplifier": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 4
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "minecraft:raider",
+                  "is_captain": true
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/pillager"
+}

@@ -23,10 +23,6 @@ public class PinkSpinelEffect extends StatusEffect {
     // Called when the effect is applied.
     @Override
     public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
-        if (entity instanceof PlayerEntity) {
-            ((PlayerEntity) entity).addExperience(1 << amplifier); // Higher amplifier gives you experience faster
-        }
-
         return super.applyUpdateEffect(entity, amplifier);
     }
 }

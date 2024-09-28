@@ -1,10 +1,18 @@
 package net.arsic.heronecklace.effect;
 
+import net.arsic.heronecklace.item.ModItems;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.arsic.heronecklace.HeroNecklace;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.condition.RandomChanceLootCondition;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 
 public class AmethystEffect extends StatusEffect {
     protected AmethystEffect() {
@@ -20,13 +28,30 @@ public class AmethystEffect extends StatusEffect {
         return true;
     }
 
-    // Called when the effect is applied.
+    // Called when the effect is applied. This is what we will need to apply
     @Override
     public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
-        if (entity instanceof PlayerEntity) {
-            ((PlayerEntity) entity).addExperience(1 << amplifier); // Higher amplifier gives you experience faster
-        }
-
         return super.applyUpdateEffect(entity, amplifier);
     }
+
+//    public static void amethystEffectLootTable() {
+//        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+//            if(source.isBuiltin() && (EntityType.SHEEP.getLootTableId().equals(key))) {
+//                LootPool.Builder poolBuilder = LootPool.builder()
+//                        .rolls(ConstantLootNumberProvider.create(1))
+//                        .conditionally(RandomChanceLootCondition.builder(0.99f)) //10% chance drop from base Pillagers
+//                        .with(ItemEntry.builder(ModItems.PINKSPINEL))
+//                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
+//                tableBuilder.pool(poolBuilder.build());
+//            }
+//            if(source.isBuiltin() && (EntityType.COW.getLootTableId().equals(key))) {
+//                LootPool.Builder poolBuilder = LootPool.builder()
+//                        .rolls(ConstantLootNumberProvider.create(1))
+//                        .conditionally(RandomChanceLootCondition.builder(0.40f)) //40% chance drop from Ravagers
+//                        .with(ItemEntry.builder(ModItems.TRIMMEDEMERALD))
+//                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
+//                tableBuilder.pool(poolBuilder.build());
+//            }
+//        });
+//    }
 }

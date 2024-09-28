@@ -1,5 +1,9 @@
 {
   "values": [
-    "heronecklace:hero_necklace"
+    "heronecklace:hero_necklace",
+    "heronecklace:shero_necklace",
+    "heronecklace:ahero_necklace",
+    "heronecklace:phero_necklace",
+    "heronecklace:rhero_necklace"
   ]
 }

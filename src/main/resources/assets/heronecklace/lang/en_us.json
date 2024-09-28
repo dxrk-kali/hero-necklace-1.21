@@ -1,15 +1,18 @@
 {
   "item.heronecklace.hero_necklace": "Hero of the Village Necklace I",
-  "item.heronecklace.shero_necklace": "Hero of the Village Necklace III",
-  "item.heronecklace.ahero_necklace": "Hero of the Village Necklace V",
-  "item.heronecklace.phero_necklace": "Hero of the Village Necklace VII",
-  "item.heronecklace.rhero_necklace": "Hero of the Village Necklace X",
+  "item.heronecklace.shero_necklace": "Hero of the Village Necklace II",
+  "item.heronecklace.ahero_necklace": "Hero of the Village Necklace III",
+  "item.heronecklace.phero_necklace": "Hero of the Village Necklace IV",
+  "item.heronecklace.rhero_necklace": "Hero of the Village Necklace V",
 
   "item.heronecklace.hero_trimmed_emerald": "A powerful Emerald to craft into a Hero of the Village Necklace.",
-  "item.heronecklace.hero_trimmed_sapphire": "A powerful Sapphire to craft into a Hero of the Village Necklace.",
-  "item.heronecklace.hero_trimmed_amethyst": "A powerful Amethyst to craft into a Hero of the Village Necklace.",
-  "item.heronecklace.hero_trimmed_pinkspinel": "A powerful Pink Spinel to craft into a Hero of the Village Necklace.",
-  "item.heronecklace.hero_trimmed_ruby": "A powerful Ruby to craft into a Hero of the Village Necklace.",
+  "item.heronecklace.hero_trimmed_sapphire": "A powerful Sapphire to craft into a Hero of the Village Necklace II.",
+  "item.heronecklace.hero_trimmed_amethyst": "A powerful Amethyst to craft into a Hero of the Village Necklace III.",
+  "item.heronecklace.hero_trimmed_pinkspinel": "A powerful Pink Spinel to craft into a Hero of the Village Necklace IV.",
+  "item.heronecklace.hero_trimmed_ruby": "A powerful Ruby to craft into a Hero of the Village Necklace V.",
 
-  "effect.heronecklace.sapphire_effect": "Effect given to player when Bad Omen II is used to enable the Sapphire Gem as a drop for 30 minutes.",
+  "effect.heronecklace.sapphire_effect": "Effect given to all players when Bad Omen II is used to enable the Sapphire Gem as a drop for 45 minutes from Pillagers, Ravagers and Evokers.",
+  "effect.heronecklace.amethyst_effect": "Effect given to all players when Bad Omen III is used to enable the Amethyst Gem as a drop for 45 minutes from Pillagers, Ravagers and Evokers.",
+  "effect.heronecklace.pinkspinel_effect": "Effect given to all players when Bad Omen IV is used to enable the Pink Spinel Gem as a drop for 45 minutes from Pillagers, Ravagers and Evokers.",
+  "effect.heronecklace.ruby_effect": "Effect given to all players when Bad Omen V is used to enable the Ruby Gem as a drop for 45 minutes from Pillagers, Ravagers and Evokers."
 }
